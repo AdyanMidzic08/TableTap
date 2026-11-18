@@ -54,9 +54,9 @@ TableTap is a web app that lets restaurants manage **orders**, **tables** and th
 
 | Member | Area |
 | :--- | :--- |
-| **Valentina** | Frontend, Figma, Design |
-| **Adyan** | Backend, Database |
-| **Finn** | Frontend, Figma, Backend |
+| **[Valentina](https://github.com/Valentina-Vrhovac)** | Frontend, Figma, Design |
+| **[Adyan](https://github.com/AdyanMidzic08)** | Backend, Database |
+| **[Finn](https://github.com/FinnEser1234)** | Frontend, Figma, Backend |
 
 ---
 
