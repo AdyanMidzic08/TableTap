@@ -56,7 +56,7 @@ TableTap is a web app that lets restaurants manage **orders**, **tables** and th
 | :--- | :--- |
 | **Valentina** | Frontend, Figma, Design |
 | **Adyan** | Backend, Database |
-| **Finn** | Frontend, Backend |
+| **Finn** | Frontend, Figma, Backend |
 
 ---
 
@@ -149,6 +149,9 @@ Friday, 7 pm, a full restaurant. The waiter writes the order on a slip of paper 
 
 ```text
 TableTap/
+├── .github/workflows/ci.yml    # CI: lint, format check, client build
+├── eslint.config.mjs           # ESLint configuration (client + server)
+├── .prettierrc.json            # Prettier configuration (client + server)
 ├── LICENSE                     # MIT license
 ├── README.md                   # Project overview (this file)
 ├── docs/                       # Project documentation (see docs/README.md)
@@ -162,7 +165,6 @@ TableTap/
 │   ├── public/                 # Static assets
 │   ├── next.config.ts          # Next.js configuration
 │   ├── postcss.config.mjs      # Tailwind CSS via PostCSS
-│   ├── eslint.config.mjs       # ESLint configuration
 │   ├── tsconfig.json           # TypeScript configuration
 │   └── package.json            # Frontend dependencies & scripts
 │
@@ -213,6 +215,8 @@ The client runs at [http://localhost:3000](http://localhost:3000).
 | `npm run build` | Create a production build |
 | `npm run start` | Serve the production build |
 | `npm run lint` | Run ESLint |
+| `npm run format` | Format all files with Prettier |
+| `npm run format:check` | Check formatting without changing files |
 
 ### Backend
 
@@ -294,7 +298,7 @@ Detailed documentation (architecture, database, API, sprints, meeting notes) liv
    ```
 4. **Open a pull request** and briefly describe what changed and why.
 
-Before opening a pull request, make sure `npm run lint` and `npm run build` pass in `client/`.
+Before opening a pull request, make sure `npm run lint` and `npm run format:check` pass in both `client/` and `server/`, and `npm run build` passes in `client/`. Use `npm run format` to fix formatting. GitHub Actions runs the same checks on every push and pull request.
 
 ---
 

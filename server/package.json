@@ -1,7 +1,12 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --no-error-on-unmatched-pattern",
+    "format": "prettier --ignore-path ../.gitignore --ignore-path ../.prettierignore --write .",
+    "format:check": "prettier --ignore-path ../.gitignore --ignore-path ../.prettierignore --check ."
+  },
   "license": "MIT",
   "type": "commonjs",
   "dependencies": {
@@ -9,9 +14,14 @@
     "mysql2": "^3.24.6"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.5",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
-    "typescript": "^7.0.2"
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.10.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.73.0"
   },
   "private": true
 }
