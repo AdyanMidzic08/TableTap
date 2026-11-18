@@ -20,6 +20,7 @@ TableTap is a web app that lets restaurants manage **orders**, **tables** and th
 ## Project Index
 
 - [Project Status](#project-status)
+- [Team](#team)
 - [The Problem](#the-problem)
 - [Goals](#goals)
 - [Features](#features)
@@ -46,6 +47,16 @@ TableTap is a web app that lets restaurants manage **orders**, **tables** and th
 | **Server** | Dependencies installed (Express, mysql2, TypeScript), folder structure in place, no implementation yet |
 | **Database** | Not created yet |
 | **Last updated** | 2026-11-13 |
+
+---
+
+## Team
+
+| Member | Area |
+| :--- | :--- |
+| **Valentina** | Frontend, Figma, Design |
+| **Adyan** | Backend, Database |
+| **Finn** | Frontend, Backend |
 
 ---
 
